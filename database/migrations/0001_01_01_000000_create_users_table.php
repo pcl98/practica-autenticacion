@@ -19,6 +19,9 @@ return new class extends Migration
             $table->string('password');
             $table->rememberToken();
             $table->timestamps();
+            $table->string('phone')->unique(); //creo campo nuevo telefono
+            $table->string('locality');//creo campo nuevo localidad
+            $table->string('role')->default('guest'); //creo campo nuevo rol
         });
 
         Schema::create('password_reset_tokens', function (Blueprint $table) {
