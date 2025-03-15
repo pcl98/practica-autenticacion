@@ -15,7 +15,7 @@ class AdminSeeder extends Seeder
             'name' => 'Admin',
             'email' => 'admin@example.com',
             'password' => Hash::make('password'),
-            'phone' => '123456789',  // Asegúrate de que estos campos existen en tu DB
+            'phone' => '123456789',
             'locality' => 'Madrid',
             'role' => 'admin',
         ]);
